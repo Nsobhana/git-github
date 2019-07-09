@@ -1,0 +1,9 @@
+node{
+stage('SCM checkout'){
+git'https://github.com/Nsobhana/git-github'
+}
+stage('complie-package'){
+sh 'mvn package'
+}
+
+}
